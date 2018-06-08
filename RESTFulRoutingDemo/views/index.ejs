@@ -1,0 +1,32 @@
+<%include partials/header%>
+<div class="ui main container">
+    <div class="ui three column stackable grid">
+        <% blogs.forEach(function(blog) { %>
+            <div class="column">
+                <div class="ui segment">
+                    <image class="ui rounded centered image" src=<%= blog.imageUrl %> >
+                    <div class="content">
+                        <a class="header" href="/blogs/<%=blog._id %>">
+                            <h3><%= blog.title %></h3>
+                        </a>
+                        <div class="meta">
+                            <span><%=blog.publishDate.toLocaleDateString()%></span>
+                        </div>
+                        <div class="description">
+                            <p><%= blog.content.substring(0, 30) + "... " %></p>
+                        </div>
+                        <div class="extra">
+                            <a 
+                                class="ui floated basic button" 
+                                href=<%="/blogs/" + blog._id %>>
+                                read more
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+<%include partials/footer%>

@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<h1>you have <%= friendList.length %> friends!!!</h1>
+<ul>
+    <% friendList.forEach(function(friend) { %>
+    <li><%= friend %></li>
+    <% }); %>
+</ul>
+
+<form action="/addFriend" method="POST">
+    <input type="text" name="name" placeholder="your bud's name">
+    <input type="text" name="howKnown" placeholder="where do you know them from?">
+    <button>Add Friend!</button>
+</form>
+
+<% include partials/footer %>

@@ -1,0 +1,10 @@
+<% include partials/header %>
+<h1>Posts</h1>
+
+<ul>
+    <% posts.forEach(function (post) { %>
+    <!--structure a post using the posts array passed by ejs-->
+    <li>Title: <strong><%=post.title%></strong>, Author: <%=post.author%></li>
+    <% }); %>
+</ul>
+<% include partials/footer %>

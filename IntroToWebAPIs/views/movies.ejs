@@ -1,0 +1,11 @@
+<h1>movies!</h1>
+
+<ol>
+    <% searchResult.Search.forEach(function(term) { %>
+    <li>
+        <p><a href=<%= "http:\/\/www.imdb.com/title/" + term.imdbID %>><%=term.Title%></a>: <%=term.Year%></p>
+    </li>
+    <% }); %>
+</ol>
+
+<a href="/">Search again!</a>

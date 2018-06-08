@@ -1,0 +1,10 @@
+<% include partials/header %>
+<h1>Your favorite is <%= favorite %></h1>
+
+<p>I like <%= favorite %> too!</p>
+
+<% if(favorite === "secrets") { %>
+    <p>Oh you like secrets, do you? Well here's one!</p> 
+    <iframe src="https://giphy.com/embed/yow6i0Zmp7G24" width="480" height="367" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<% } %>
+<% include partials/footer %>

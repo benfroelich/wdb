@@ -1,0 +1,14 @@
+{
+  "name": "route-params-exercise",
+  "version": "1.0.0",
+  "description": "route parameters exercise from the web dev bootcamp with Colt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

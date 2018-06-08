@@ -1,0 +1,13 @@
+/* size all images within grid systems to their containing div*/
+img {
+    overflow: auto;
+    max-height: 150px;
+    height: auto;
+}
+/* increase the size of the blog message icon*/
+.header > i.icon {
+    font-size: 1.45em;
+}
+.main.container {
+    margin-top: 3.5em;
+}
